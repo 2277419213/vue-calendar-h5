@@ -10,9 +10,9 @@
 
 ###### cnpm：[https://developer.aliyun.com/mirror/npm/package/vue-calendar-h5-plus](https://developer.aliyun.com/mirror/npm/package/vue-calendar-h5-plus)
 
-###### github：[https://github.com/2277419213/vue-calendar-h5#vue3.0](https://github.com/2277419213/vue-calendar-h5#vue3.0)
+###### github：[https://github.com/2277419213/vue-calendar-h5/tree/vue3.0](https://github.com/2277419213/vue-calendar-h5/tree/vue3.0)
 
-###### gitee：[https://gitee.com/JuLizhanzhan/vue-calendar-h5#vue3.0](https://gitee.com/JuLizhanzhan/vue-calendar-h5#vue3.0)
+###### gitee：[https://gitee.com/JuLizhanzhan/vue-calendar-h5/tree/vue3.0](https://gitee.com/JuLizhanzhan/vue-calendar-h5/tree/vue3.0)
 
 ## 食用方式
 
@@ -107,6 +107,10 @@ createApp(App)`.use(H5Calendar)`.mount("#app");
 ### 1.0.0
 
 修改构建版本，支持 vue3.0 引用。
+
+### 1.0.1
+
+修改描述，去掉 map 文件。
 
 ## 鸣谢
 
