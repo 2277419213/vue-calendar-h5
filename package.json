@@ -1,42 +1,41 @@
 {
-    "name": "vue-calendar-h5",
-    "description": "小巧的日历样式组件,不仅可以展示,还可以选择",
-    "version": "1.0.0",
-    "author": "居里栈栈",
-    "license": "MIT",
-    "private": false,
-    "main": "./dist/index.js",
-    "scripts": {
-        "build": "cross-env NODE_ENV=production webpack --hide-modules"
+  "name": "vue-calendar-h5-plus",
+  "version": "1.0.0",
+  "main": "lib/vue-calendar-h5-plus.umd.min.js",
+  "scripts": {
+    "lib": "vue-cli-service build --target lib --name vue-calendar-h5-plus --dest lib src/index.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-calendar-h5": "^1.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
     },
-    "dependencies": {
-        "vue": "^2.6.11"
-    },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not ie <= 8"
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
     ],
-    "devDependencies": {
-        "@babel/core": "^7.0.0",
-        "@babel/plugin-proposal-class-properties": "^7.0.0",
-        "@babel/plugin-proposal-json-strings": "^7.0.0",
-        "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-        "@babel/plugin-syntax-import-meta": "^7.0.0",
-        "@babel/plugin-transform-runtime": "^7.0.0",
-        "@babel/preset-env": "^7.0.0",
-        "@babel/runtime-corejs2": "^7.9.2",
-        "babel-loader": "^8.0.0",
-        "clean-webpack-plugin": "^3.0.0",
-        "cross-env": "^7.0.2",
-        "css-loader": "^3.5.3",
-        "file-loader": "^6.0.0",
-        "terser-webpack-plugin": "^2.3.5",
-        "vue-loader": "^15.9.1",
-        "vue-template-compiler": "^2.6.11",
-        "webpack": "^4.43.0",
-        "webpack-cli": "^3.3.11",
-        "webpack-dev-server": "^3.10.3",
-        "webpackbar": "^4.0.0"
-    }
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
